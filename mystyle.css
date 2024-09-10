@@ -10,3 +10,7 @@ body{
     width: fit-content;
 }
 
+li{
+    margin-bottom: 3px;
+}    
+
