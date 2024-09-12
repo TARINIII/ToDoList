@@ -94,14 +94,31 @@
 
             document.querySelector(".main").appendChild(listNode);
 
-            document.querySelector(".input1").value = " ";
+            document.querySelector(".input1").value = null;
 
 
             console.log(list1);
 
+
+
         }
 
-        document.querySelector(".button1").addEventListener("click", create_ul_li);
+
+
+        
+        document.querySelector(".button1").addEventListener("click", function (){
+
+            if(document.querySelector("input").value === ""){
+                alert("enter a task");
+            }
+
+            else{
+                create_ul_li();
+            }
+
+        });
+            
+        
 
     
     </script>
